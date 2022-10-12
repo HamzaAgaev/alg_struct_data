@@ -1,0 +1,292 @@
+{
+    "Абдалла Мустафа ": {
+        "gender": "мужской",
+        "age": "19",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "день"
+    },
+    "Агаев Хамза Рустам оглы": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Мартынюк Алексей Петрович": {
+        "gender": "мужской",
+        "age": "17",
+        "hometown": "не Питер",
+        "hair-color": "тёмные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "коты",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "ночь"
+    },
+    "Коломиец Алиса Денисовна": {
+        "gender": "женский",
+        "age": "17",
+        "hometown": "Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "ночь"
+    },
+    "Бахтина Анастасия Вячеславовна": {
+        "gender": "женский",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "день"
+    },
+    "Гаджиева Патина Гасановна": {
+        "gender": "женский",
+        "age": "19",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Георгов Олег Георгиевич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "день"
+    },
+    "Гуренко Максим Сергеевич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "день"
+    },
+    "Гусев Ярослав Александрович": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "день"
+    },
+    "Ершов Николай Евгеньевич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "день"
+    },
+    "Иванова Анастасия Александровна": {
+        "gender": "женский",
+        "age": "17",
+        "hometown": "Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "чай",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Колтунова Полина Денисовна": {
+        "gender": "женский",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "день"
+    },
+    "Луценко Владимир Витальевич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "день"
+    },
+    "МИгулян Денис Игоревич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "ночь"
+    },
+    "Мордовцев Роман Антонович": {
+        "gender": "мужской",
+        "age": "17",
+        "hometown": "не Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Морозов Матвей Максимович": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Морозова Яна Александровна": {
+        "gender": "женский",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Коломиец Алексей Леонидович": {
+        "gender": "мужской",
+        "age": "17",
+        "hometown": "Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Никифоров Савелий Денисович": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Разкаллах Кироллос ": {
+        "gender": "мужской",
+        "age": "20",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "ночь"
+    },
+    "Сидненко Дмитрий Юрьевич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "день"
+    },
+    "Скворцов Иван Владимирович": {
+        "gender": "мужской",
+        "age": "17",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Уразалин Амир ": {
+        "gender": "мужской",
+        "age": "17",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Федорова Алина Анатольевна": {
+        "gender": "женский",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "зима",
+        "favourite-daytime": "ночь"
+    },
+    "Цветкова Надежда Вячеславовна": {
+        "gender": "женский",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Шабанов Роман Эльмирович": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "светлые",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Шапиро Михаил Юрьевич": {
+        "gender": "мужской",
+        "age": "18",
+        "hometown": "Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "кошки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Шевченко Кристина ВАлерьевна": {
+        "gender": "женский",
+        "age": "19",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "чай",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    },
+    "Шимченко Александра Сергеевна": {
+        "gender": "женский",
+        "age": "18",
+        "hometown": "не Питер",
+        "hair-color": "темные",
+        "favorite-drink": "кофе",
+        "favorite-animal": "собаки",
+        "favourite-yeartime": "лето",
+        "favourite-daytime": "ночь"
+    }
+}

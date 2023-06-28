@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - All Algorithms</title>
+    </head>
+    <body>        
+        <div class="main_head_div">
+            <span onclick="location.href=''" class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+            <div onclick="location.href='aboutme'" class="aboutme_div">About me</div>
+        </div>
+
+        <div class="all_algo_div">
+            <span class="main_content">All Algorithms</span>
+            
+            <div onclick="location.href='bubble_sort'" class="article_title_div" id="purple">
+                <span class="article_main_text">Bubble Sort</span>
+                <span class="article_extra_text">The Simplest Sorting Algorithm</span>
+            </div>
+    
+            <div onclick="location.href='selection_sort'" class="article_title_div" id="orange">
+                <span class="article_main_text">Selection Sort</span>
+                <span class="article_extra_text">Find the minimum and move it up</span>
+            </div>
+    
+            <div onclick="location.href='quick_sort'" class="article_title_div" id="blue">
+                <span class="article_main_text">Quick Sort</span>
+                <span class="article_extra_text">One of the fastest known algorithms</span>
+            </div>
+    
+            <div onclick="location.href='merge_sort'" class="article_title_div" id="green">
+                <span class="article_main_text">Merge Sort</span>
+                <span class="article_extra_text">Divide and Rule</span>
+            </div>
+    
+            <div onclick="location.href='insertion_sort'"  class="article_title_div" id="red">
+                <span class="article_main_text">Insertion Sort</span>
+                <span class="article_extra_text">Insert and Offset</span>
+            </div>
+        </div>
+    </body>
+</html>

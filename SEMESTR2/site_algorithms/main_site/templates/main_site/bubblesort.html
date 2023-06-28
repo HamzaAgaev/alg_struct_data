@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - Bubble Sort</title>
+    </head>
+    <body>
+        <div class="main_head_div">
+            <span onclick="location.href='../'" class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+        </div>
+
+        <div class="head_but_div">
+            <button onclick="location.href='../'" class="head_but">See All Algorithms</button>
+            <button onclick="location.href='../aboutme'" class="head_but">About Me</button>
+        </div>
+
+        <div class="article_div" id="purple">
+            <span class="article_main_text">Bubble Sort</span>
+            <span class="article_extra_text">The Simplest Sorting Algorithm</span>
+        </div>
+
+        <div class="main_text_div">
+            <p class="main_text">Bubble sorting is a sorting algorithm that runs through the list several times. On each pass, two neighboring items are compared, and if they are in the wrong order, they are swapped. The passes are repeated until all the items in the list have been sorted from left to right.</p>
+
+            <div class="img_div" id="r">
+                <div class="hat_div">
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                </div>
+                <img src="{% static 'main_site/assets/images/bubblesort.gif' %}" alt="Bubble Sort" class="img" id="r">
+            </div>
+
+            <p class="main_text">Bubble sorting algorithm:</p>
+            <ol>
+                <li class="main_text">Pass from the 0th element to n-1 elements of the list.</li>
+                <li class="main_text">For each i-th element inside this loop, check if ai > ai+1, then swap ai and ai+1. If the inner loop didn't change anything, we finish the algorithm.</li>
+            </ol>
+
+            <p class="main_text">Example code for bubble sorting in Python:</p>
+
+            <div class="code_ex_div" id="orange">
+                <span class="code_ex_text">Bubble Sort Code Example</span>
+            </div>
+
+            <div class="code_div">
+                <pre><code>
+def bubble_sort(arr):
+    """
+    Bubble sort implementation.
+    
+    :param arr: list of elements to sort
+    :return: the sorted list of elements
+    """
+    n = len(arr)
+    # Cycle through all the elements in the list
+    for i in range(n):
+        # the last (n-1-i) elements are already sorted,
+        # since the largest element is shifted to the end of the list
+        for j in range(n - i - 1):
+            # We compare the two adjacent elements
+            if arr[j] > arr[j + 1]:
+                # if the first element is larger than the second,
+                # swap them in places
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+                </code></pre>
+            </div>                
+                
+            <p class="main_text">The above bubble_sort() function takes a list of elements arr. The function first determines the length of the list n, then the outer for loop goes through all the elements of the list.</p>
+
+            <p class="main_text">The inner for loop goes through each list item and compares it to its right neighbor. If it is larger than its right neighbor, they swap places. After the inner loop is passed, the comparisons and moves continue until all of the list items are in the correct order. The function returns a sorted list of elements.</p>
+        </div>
+    </body>
+</html>

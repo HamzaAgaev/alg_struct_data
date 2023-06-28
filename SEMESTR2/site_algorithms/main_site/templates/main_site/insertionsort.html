@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - Insertion Sort</title>
+    </head>
+    <body>
+        <div class="main_head_div">
+            <span onclick="location.href='../'" class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+        </div>
+
+        <div class="head_but_div">
+            <button onclick="location.href='../'" class="head_but">See All Algorithms</button>
+            <button onclick="location.href='../aboutme'" class="head_but">About Me</button>
+        </div>
+
+        <div class="article_div" id="red">
+            <span class="article_main_text">Insertion Sort</span>
+            <span class="article_extra_text">Insert and Offset</span>
+        </div>
+
+        <div class="main_text_div">
+            <p class="main_text">Insertion sorting is a sorting algorithm that sorts an array of elements by alternately inserting each element in its place in the sorted part of the array. The algorithm runs through all elements of the array, starting from the second element, and each time inserts the current element into its place in the sorted part of the array.</p>
+
+            <p class="main_text">Insertion sorting is great for small arrays or for arrays where most of the elements have already been sorted. In general, the time to perform inset sorting is O(n^2), where n is the number of elements in the array.</p>
+
+            <p class="main_text">The advantage of sorting with inserts is that the sorting algorithm runs through all the elements only once, and the amount of memory needed to perform the sorting is proportional only to the size of the array.</p>
+
+            <div class="img_div" id="r">
+                <div class="hat_div">
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                </div>
+                <img src="{% static 'main_site/assets/images/insertionsort.gif' %}" alt="Insertion Sort" class="img" id="r">
+            </div>
+
+            <p class="main_text">The algorithm for sorting with inserts is as follows:</p>
+            <ol>
+                <li class="main_text">Locate at the beginning of the unsorted part of the array.</li>
+                <li class="main_text">Take the first element of the unsorted part and insert it at the desired location in the unsorted part.</li>
+                <li class="main_text">Shift all elements from the specified location to the end of the sorted part one element to the right.</li>
+                <li class="main_text">Repeat steps 2-3 for all remaining elements in the unsorted part of the array.</li>
+            </ol>
+
+            <p class="main_text">An example of Python implementation of an insertion sorting algorithm:</p>
+
+            <div class="code_ex_div" id="purple">
+                <span class="code_ex_text">Insertion Sort Code Example</span>
+            </div>
+
+            <div class="code_div">
+                <pre><code>
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+                </code></pre>
+            </div>
+
+            <p class="main_text">The insertion_sort function takes an array arr as input and sorts it using the insertion sort method, returning a sorted array.</p>
+
+            <p class="main_text">At each iteration of the for loop, the current element of the array key is taken and inserted at the right place in the sorted part of the array, using the while loop. Within the while loop, the elements of the sorted part are shifted one element to the right and each time the new element is compared with the next element of the sorted part to determine the correct place of insertion.</p>
+        </div>
+    </body>
+</html>

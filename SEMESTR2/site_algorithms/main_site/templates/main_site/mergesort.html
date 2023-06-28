@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - Merge Sort</title>
+    </head>
+    <body>
+        <div class="main_head_div">
+            <span onclick="location.href='../'" class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+        </div>
+
+        <div class="head_but_div">
+            <button onclick="location.href='../'" class="head_but">See All Algorithms</button>
+            <button onclick="location.href='../aboutme'" class="head_but">About Me</button>
+        </div>
+
+        <div class="article_div" id="green">
+            <span class="article_main_text">Merge Sort</span>
+            <span class="article_extra_text">Divide and Rule</span>
+        </div>
+
+        <div class="main_text_div">
+            <p class="main_text">Merge Sort is a classic sorting algorithm that works on the basis of divide and conquer principles.</p>
+
+            <p class="main_text">The basic principle of merge sorting is to divide an unsorted array into two parts, sort each part using a recursive call to merge sort and then merge the sorted subarrays.</p>
+
+            <div class="img_div" id="l">
+                <div class="hat_div">
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                </div>
+                <img src="{% static 'main_site/assets/images/mergesort.gif' %}" alt="Merge Sort" class="img" id="l">
+            </div>
+            
+            <p class="main_text">The merge sort procedure consists of the following steps:</p>
+            <ol id="align_l">
+                <li class="main_text">Splitting the array: the initial array is divided into two equal parts (if the length of the array is even) or into two parts with a small deviation from equality (if the length of the array is odd).</li>
+                <li class="main_text">Recursive sorting of the halves: Each of the array halves is recursively sorted using the same procedure.</li>
+                <li class="main_text">Merge sorted parts: after ever two halves of the array are sorted, they are merged into a new array which is also sorted.</li>
+            </ol>
+
+            <p class="main_text">The algorithm for merging two sorted arrays is as follows:</p>
+            <ol id="align_l">
+                <li class="main_text">Using two pointers, we move through each array, comparing the values of the current elements.</li>
+                <li class="main_text">The smaller element of the two is added to the resulting array and the pointer in the array from which it was selected is moved.</li>
+                <li class="main_text">The process is repeated until one of the arrays is completely moved to the resulting array.</li>
+                <li class="main_text">The remaining elements of the other array are added to the end of the resulting array.</li>
+            </ol>
+
+            <p class="main_text">Here is an example of Python code that implements merge sorting:</p>
+
+            <div class="code_ex_div" id="red">
+                <span class="code_ex_text">Merge Sort Code Example</span>
+            </div>
+
+            <div class="code_div">
+                <pre><code>
+def merge_sort(array):
+    If len(array) < 2:
+        return array
+    else:
+        mid = len(array) // 2
+        left = merge_sort(array[:mid])
+        right = merge_sort(array[mid:])
+        return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = 0
+    j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result += left[i:]
+    result += right[j:]
+    return result
+                </code></pre>
+            </div>
+ 
+            <p class="main_text">In this example, the merge_sort function is responsible for splitting the array into two halves and sorting them recursively, and the merge function merges the two sorted arrays (left and right) into one sorted array.</p>
+        </div>
+    </body>
+</html>

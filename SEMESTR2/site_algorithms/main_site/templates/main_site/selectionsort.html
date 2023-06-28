@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - Selection Sort</title>
+    </head>
+    <body>
+        <div onclick="location.href='../'" class="main_head_div">
+            <span class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+        </div>
+
+        <div class="head_but_div">
+            <button onclick="location.href='../'" class="head_but">See All Algorithms</button>
+            <button onclick="location.href='../aboutme'" class="head_but">About Me</button>
+        </div>
+
+        <div class="article_div" id="orange">
+            <span class="article_main_text">Selection Sort</span>
+            <span class="article_extra_text">Find the minimum and move it up</span>
+        </div>
+
+        <div class="main_text_div">
+            <p class="main_text">The Selection Sort Algorithm is a simple sorting algorithm that searches for the minimum element in the array and moves it to the first place. Then the procedure is repeated for the subarray, excluding already sorted elements, and so on until all elements have been sorted.</p>
+
+            <div class="img_div" id="l">
+                <div class="hat_div">
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                </div>
+                <img src="{% static 'main_site/assets/images/selectionsort.gif' %}" alt="Selection Sort" class="img" id="l">
+            </div>
+
+            <p class="main_text">The Selection Sorting Algorithm consists of the following steps:</p>
+            <ol id="align_l">
+                <li class="main_text">Find the minimum element in the array.</li>
+                <li class="main_text">Swap the found minimum element with the first element in the array. Exclude the first element from consideration and continue this process until all elements are sorted.</li>
+            </ol>
+
+            <p class="main_text">An example implementation of sorting by selection in Python:</p>
+
+            <div class="code_ex_div" id="blue">
+                <span class="code_ex_text">Selection Sort Code Example</span>
+            </div>
+
+            <div class="code_div">
+                <pre><code>
+def selection_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        # Find the index of the minimum element
+        min_index = i
+        for j in range(i+1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        # change the current element with the minimum
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+    return arr
+                </code></pre>
+            </div>
+            
+            <p class="main_text">The selection_sort() function takes an array arr as input and returns its sorted instance. The algorithm consists of two nested loops. The outer loop is executed n times, where n is the length of the array, and at each iteration selects the minimum element in the subarray, starting from the current position i. The inner loop goes through the remaining elements and updates the index of the minimum element if it finds an element that is smaller than the current minimum element. The current element then swaps with the minimum element found in the current iteration.
+            </p>
+        </div>
+    </body>
+</html>

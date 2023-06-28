@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - About Me</title>
+    </head>
+    <body>
+        <div class="main_head_div">
+            <span onclick="location.href='../'" class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+            <div onclick="location.href='../'" class="aboutme_div">See All Algorithms</div>
+        </div>
+
+        <div class="all_algo_div">
+            <span class="main_content">About Me</span>
+            <p class="aboutme_text">
+                Hi! My name is Agaev Hamza. I am studying at ITMO University in the direction of "Infocommunication technologies and communication systems". I developed this site, which simply and conveniently disassembled the principles of basic sorting algorithms.  This project is accessible to everyone, including those who are new to IT. The intuitive interface will provide you with comfortable work.
+            </p>
+            <span class="main_content">My contacts</span>
+            <div onclick="location.href='https://t.me/blxssgod'" class="my_links">
+                <span class="aboutme_text">Telegram</span>
+                <img class="icon" src="{% static 'main_site/assets/images/telegram.png' %}" alt="Telegram Icon">
+            </div>
+            <div onclick="location.href='https://vk.com/fuckkyou.baby'" class="my_links">
+                <span class="aboutme_text">VK</span>
+                <img class="icon" src="{% static 'main_site/assets/images/vk.png' %}" alt="VK Icon">
+            </div>
+            <div onclick="location.href='https://github.com/HamzaAgaev'" class="my_links">
+                <span class="aboutme_text">GitHub</span>
+                <img class="icon" src="{% static 'main_site/assets/images/github.png' %}" alt="GitHub Icon">
+            </div>
+        </div>
+    </body>
+</html>

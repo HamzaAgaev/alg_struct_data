@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=decice-width, initial-scale=1.0">#}
+        <link rel="stylesheet" href="{% static 'main_site/assets/css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=IBM+Plex+Mono:wght@500&family=Josefin+Sans&family=Kanit&family=Outfit:wght@600&family=Space+Grotesk&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="{% static 'main_site/assets/images/icon.ico' %}">
+        <title>Algorithms are really interesting! - Quick Sort</title>
+    </head>
+    <body>
+        <div class="main_head_div">
+            <span onclick="location.href='../'" class="head_text"><span class="highlighted_head_text">Algorithms</span> are really interesting!</span>
+        </div>
+
+        <div class="head_but_div">
+            <button onclick="location.href='../'" class="head_but">See All Algorithms</button>
+            <button onclick="location.href='../aboutme'" class="head_but">About Me</button>
+        </div>
+
+        <div class="article_div" id="blue">
+            <span class="article_main_text">Quick Sort</span>
+            <span class="article_extra_text">One of the fastest known algorithms</span>
+        </div>
+
+        <div class="main_text_div">
+            <p class="main_text">Quick Sorting is one of the most popular sorting algorithms, which was invented by Tony Hoare in 1960. The algorithm is based on the idea of dividing an array into subarrays that are sorted separately from each other.</p>
+
+            <div class="img_div" id="r">
+                <div class="hat_div">
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                    <div class="balls"></div>
+                </div>
+                <img src="{% static 'main_site/assets/images/quicksort.gif' %}" alt="Quick Sort" class="img" id="r">
+            </div>
+
+            <p class="main_text">The algorithm works as follows:</p>
+            <ol>           
+                <li class="main_text">The reference element (pivot) is selected from the array.</li>
+                <li class="main_text">The array is divided into two subgroups: elements that are less than or equal to the reference element are placed in one subgroup (left); elements, which are greater than the reference element, are placed in the other subgroup (right).</li>
+                <li class="main_text">Recursively repeat the procedure of sorting the values left and right, until we reach the array of one element (recursion exit condition).</li>
+                <li class="main_text">The final sorted array is obtained by combining the sorted subarrays: left + pivot + right.</li>
+            </ol>
+                
+            <p class="main_text">Here is a simple implementation of the quicksort algorithm in Python:</p>
+
+            <div class="code_ex_div" id="green">
+                <span class="code_ex_text">Selection Sort Code Example</span>
+            </div>
+
+            <div class="code_div">
+                <pre><code>                
+def quicksort(arr):
+    if len(arr) < 2:
+        return arr
+    else:
+        pivot = arr[0]
+        left = [i for i in arr[1:] if i <= pivot]
+        right = [i for i in arr[1:] if i > pivot]
+        return quicksort(left) + [pivot] + quicksort(right)
+                </code></pre>
+            </div>
+
+            <p class="main_text">In this program, we define a quicksort function that takes an array arr as a parameter.</p>
+                
+            <p class="main_text">If the array has fewer than two elements, we return the array because it is already sorted (this is the condition for exiting recursion).</p>
+                
+            <p class="main_text">Otherwise, we choose the first element of the array as the pivot and create two new subgroups: elements that are less than or equal to the pivot (left) and elements that are greater than the pivot (right).</p>
+                
+            <p class="main_text">Then we recursively call the quicksort function for left and right, combine the sorted left + pivot + right, and return the result.</p>
+        </div>
+    </body>
+</html>
